@@ -1,0 +1,14 @@
+/* Add this CSS code to your stylesheet */
+.demo-logo-vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 20px !important;
+  color: azure;
+}
+
+.demo-logo-vertical{
+  font-size: 24px; 
+  font-weight: bolder;
+}
