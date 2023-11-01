@@ -83,6 +83,11 @@ const YearPages = () => {
       dataIndex: 'name',
       key: 'name',
     },
+    {
+      title: 'Qoshimcha malumot',
+      dataIndex: 'description',
+      key: 'description',
+    },
 
     {
       title: 'Action',
@@ -133,13 +138,13 @@ const YearPages = () => {
               justifyContent: "space-between",
             }}
           >
-            <h1>Teachers {data.length}</h1>
+            <h1>{searchContext} | {data.length} ta malumot bor</h1>
             <div>
               <>
                 <Button type="primary" onClick={showModal}>
-                  Add Teacher
+                  Add
                 </Button>
-                <Modal title="Basic Modal" open={isModalOpen} onOk={handleOk} onCancel={handleCancel} okText={selected === null ? 'Add Teacher' : 'Save Teacher'}>
+                <Modal title="Basic Modal" open={isModalOpen} onOk={handleOk} onCancel={handleCancel} okText={selected === null ? 'Add' : 'Save'}>
                   <Form
                     form={form}
                     name="basic"
@@ -206,6 +211,13 @@ const YearPages = () => {
                           message: 'Please input your name!',
                         },
                       ]}
+                    >
+                      <Input />
+                    </Form.Item>
+
+                    <Form.Item
+                      label="Description"
+                      name="description"
                     >
                       <Input />
                     </Form.Item>

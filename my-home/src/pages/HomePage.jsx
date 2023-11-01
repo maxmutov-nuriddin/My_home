@@ -132,13 +132,13 @@ const HomePage = () => {
               justifyContent: "space-between",
             }}
           >
-            <h1>Teachers {data.length}</h1>
+            <h1>Barcha yillar | {data.length} ta malumot bor</h1>
             <div>
               <>
                 <Button type="primary" onClick={showModal}>
-                  Add Teacher
+                  Add
                 </Button>
-                <Modal title="Basic Modal" open={isModalOpen} onOk={handleOk} onCancel={handleCancel} okText={selected === null ? 'Add Teacher' : 'Save Teacher'}>
+                <Modal title="Basic Modal" open={isModalOpen} onOk={handleOk} onCancel={handleCancel} okText={selected === null ? 'Add' : 'Save'}>
                   <Form
                     form={form}
                     name="basic"
