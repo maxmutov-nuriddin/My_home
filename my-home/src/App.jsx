@@ -25,9 +25,8 @@ function App() {
     <Routes>
       <Route element={<Layouts />}>
         <Route path='/' element={<HomePage />} />
-        <Route path={`/${searchContext}`} element={<YearPages />} />
-
-        {/* <Route path='/2015' element={<YearPages />} />
+        {/* <Route path={`/${searchContext}`} element={<YearPages />} /> */}
+        <Route path='/2015' element={<YearPages />} />
         <Route path='/2016' element={<YearPages />} />
         <Route path='/2017' element={<YearPages />} />
         <Route path='/2018' element={<YearPages />} />
@@ -36,7 +35,7 @@ function App() {
         <Route path='/2021' element={<YearPages />} />
         <Route path='/2022' element={<YearPages />} />
         <Route path='/2023' element={<YearPages />} />
-        <Route path='/2024' element={<YearPages />} /> */}
+        <Route path='/2024' element={<YearPages />} />
       </Route>
     </Routes>
   );

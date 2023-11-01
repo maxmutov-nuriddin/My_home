@@ -84,9 +84,9 @@ const YearPages = () => {
       key: 'name',
     },
     {
-      title: 'Qoshimcha malumot',
-      dataIndex: 'description',
-      key: 'description',
+      title: 'Shot',
+      dataIndex: 'shot',
+      key: 'shot',
     },
 
     {
@@ -216,8 +216,14 @@ const YearPages = () => {
                     </Form.Item>
 
                     <Form.Item
-                      label="Description"
-                      name="description"
+                      label="Shot"
+                      name="shot"
+                      rules={[
+                        {
+                          required: true,
+                          message: 'Please input your name!',
+                        },
+                      ]}
                     >
                       <Input />
                     </Form.Item>

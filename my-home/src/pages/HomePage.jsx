@@ -78,9 +78,9 @@ const HomePage = () => {
       key: 'name',
     },
     {
-      title: 'Qoshimcha malumot',
-      dataIndex: 'description',
-      key: 'description',
+      title: 'Shot',
+      dataIndex: 'shot',
+      key: 'shot',
     },
 
     {
@@ -210,8 +210,8 @@ const HomePage = () => {
                     </Form.Item>
 
                     <Form.Item
-                      label="Name"
-                      name="description"
+                      label="Shot"
+                      name="shot"
                     >
                       <TextArea />
                     </Form.Item>
